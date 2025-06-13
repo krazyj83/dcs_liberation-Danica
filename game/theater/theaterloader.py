@@ -8,8 +8,12 @@ from typing import Any
 
 import yaml
 from dcs.terrain import (
+    Afghanistan,
     Caucasus,
     Falklands,
+    GermanyColdWar,
+    Iraq,
+    Kola,
     MarianaIslands,
     Nevada,
     Normandy,
@@ -25,8 +29,12 @@ from .landmap import load_landmap
 from .seasonalconditions import Season, SeasonalConditions, WeatherTypeChances
 
 ALL_TERRAINS = [
+    Afghanistan(),
     Caucasus(),
     Falklands(),
+    GermanyColdWar(),
+    Iraq(),
+    Kola(),
     PersianGulf(),
     Normandy(),
     MarianaIslands(),
@@ -34,7 +42,7 @@ ALL_TERRAINS = [
     TheChannel(),
     Sinai(),
     Syria(),
-]
+    ]
 
 TERRAINS_BY_NAME = {t.name: t for t in ALL_TERRAINS}
 
